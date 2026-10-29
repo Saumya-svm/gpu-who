@@ -1,10 +1,10 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="60"><title>Who's On The GPUs</title><style>
+<meta http-equiv="refresh" content="60"><title>Jawahar GPUs</title><style>
 :root{--bg:#fbfaf9;--fg:#1a1a18;--dim:#6b6b66;--line:#e3e1dd;--card:#fff;
---idle:#2f9e6e;--accent:#3d6fd4;--mine:rgba(61,111,212,.07)}
+--idle:#2f9e6e;--full:#c6462f;--accent:#3d6fd4;--mine:rgba(61,111,212,.07)}
 @media(prefers-color-scheme:dark){:root{--bg:#17171a;--fg:#ececea;--dim:#97958f;
---line:#2e2e33;--card:#1f1f23;--idle:#49c489;--accent:#7aa2f0;
+--line:#2e2e33;--card:#1f1f23;--idle:#49c489;--full:#e2694f;--accent:#7aa2f0;
 --mine:rgba(122,162,240,.1);color-scheme:dark}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);padding:28px 0 56px;
@@ -32,23 +32,26 @@ padding-top:14px}
 code{font:12px ui-monospace,Menlo,monospace;background:var(--line);padding:1px 5px;
 border-radius:4px}
 </style></head><body><div class="wrap">
-<h1>Who's on the GPUs</h1>
-<div class="ts" id="ts">2026-10-29 17:19:28 IST</div>
-<div class="free"><b id="free">31</b> of 60 GPUs free
-<span class="dim">&middot; 16 offline &middot; 29 allocated</span></div>
+<h1>jawahar GPUs</h1>
+<div class="ts" id="ts">2026-10-29 17:22:45 IST</div>
+<div class="free"><b id="cap" style="color:var(--full)">8</b>
+of 8 GPUs used <span class="dim">&middot; 0 free on the account cap</span>
+<div class="dim" style="font-size:12.5px;margin-top:3px">cluster-wide:
+<span id="free">31</span> of 60 GPUs idle</div></div>
 
 <h2>By user and node</h2>
 <div class="tw"><table>
-<tr><th>user</th><th>account</th><th>node</th><th>gpus</th><th>jobs</th></tr>
-<tr><td><b>aditya.shankar</b></td><td class="dim">suresh.purini</td><td>node11</td><td class="num"><b>4</b></td><td class="num dim">1</td></tr><tr><td><b>aditya.shankar</b></td><td class="dim">suresh.purini</td><td>node06</td><td class="num"><b>4</b></td><td class="num dim">1</td></tr><tr><td><b>aryama.murthy</b></td><td class="dim">priyesh.shukla</td><td>node09</td><td class="num"><b>4</b></td><td class="num dim">4</td></tr><tr><td><b>cs3.406-a</b></td><td class="dim">cs3406</td><td>node13</td><td class="num"><b>4</b></td><td class="num dim">1</td></tr><tr><td><b>aditya.rathore</b></td><td class="dim">jawahar</td><td>node07</td><td class="num"><b>2</b></td><td class="num dim">2</td></tr><tr><td><b>arunvenkat.jonna</b></td><td class="dim">priyesh.shukla</td><td>node12</td><td class="num"><b>2</b></td><td class="num dim">2</td></tr><tr class=me><td><b>saumya.mundra</b></td><td class="dim">jawahar</td><td>node01</td><td class="num"><b>2</b></td><td class="num dim">2</td></tr><tr><td><b>shashikanta.sahoo</b></td><td class="dim">jawahar</td><td>node01</td><td class="num"><b>2</b></td><td class="num dim">2</td></tr><tr><td><b>bhuvan.kapur</b></td><td class="dim">deva</td><td>node14</td><td class="num"><b>1</b></td><td class="num dim">1</td></tr><tr><td><b>chanda.kumar</b></td><td class="dim">priyesh.shukla</td><td>node03</td><td class="num"><b>1</b></td><td class="num dim">1</td></tr><tr><td><b>radhakrishna.de</b></td><td class="dim">jawahar</td><td>node03</td><td class="num"><b>1</b></td><td class="num dim">1</td></tr><tr class=me><td><b>saumya.mundra</b></td><td class="dim">jawahar</td><td>node03</td><td class="num"><b>1</b></td><td class="num dim">1</td></tr><tr><td><b>yashas.kotre</b></td><td class="dim">priyesh.shukla</td><td>node10</td><td class="num"><b>1</b></td><td class="num dim">1</td></tr></table></div>
+<tr><th>user</th><th>node</th><th>gpus</th></tr>
+<tr><td><b>aditya.rathore</b></td><td>node07</td><td class="num"><b>2</b></td></tr><tr class=me><td><b>saumya.mundra</b></td><td>node01</td><td class="num"><b>2</b></td></tr><tr><td><b>shashikanta.sahoo</b></td><td>node01</td><td class="num"><b>2</b></td></tr><tr><td><b>radhakrishna.de</b></td><td>node03</td><td class="num"><b>1</b></td></tr><tr class=me><td><b>saumya.mundra</b></td><td>node03</td><td class="num"><b>1</b></td></tr></table></div>
 
 <h2>Totals per user</h2>
 <div class="tw"><table>
-<tr><td><b>aditya.shankar</b></td><td class="dim">suresh.purini</td><td class="num"><b>8</b></td></tr><tr><td><b>cs3.406-a</b></td><td class="dim">cs3406</td><td class="num"><b>4</b></td></tr><tr><td><b>aryama.murthy</b></td><td class="dim">priyesh.shukla</td><td class="num"><b>4</b></td></tr><tr class=me><td><b>saumya.mundra</b></td><td class="dim">jawahar</td><td class="num"><b>3</b></td></tr><tr><td><b>aditya.rathore</b></td><td class="dim">jawahar</td><td class="num"><b>2</b></td></tr><tr><td><b>shashikanta.sahoo</b></td><td class="dim">jawahar</td><td class="num"><b>2</b></td></tr><tr><td><b>arunvenkat.jonna</b></td><td class="dim">priyesh.shukla</td><td class="num"><b>2</b></td></tr><tr><td><b>bhuvan.kapur</b></td><td class="dim">deva</td><td class="num"><b>1</b></td></tr><tr><td><b>radhakrishna.de</b></td><td class="dim">jawahar</td><td class="num"><b>1</b></td></tr><tr><td><b>chanda.kumar</b></td><td class="dim">priyesh.shukla</td><td class="num"><b>1</b></td></tr><tr><td><b>yashas.kotre</b></td><td class="dim">priyesh.shukla</td><td class="num"><b>1</b></td></tr>
-<tr><td class="dim">total</td><td></td><td class="num"><b>29</b></td></tr>
+<tr class=me><td><b>saumya.mundra</b></td><td class="num"><b>3</b></td></tr><tr><td><b>aditya.rathore</b></td><td class="num"><b>2</b></td></tr><tr><td><b>shashikanta.sahoo</b></td><td class="num"><b>2</b></td></tr><tr><td><b>radhakrishna.de</b></td><td class="num"><b>1</b></td></tr>
+<tr><td class="dim">total</td><td class="num"><b>8 / 8</b></td></tr>
 </table></div>
 
-<div class="note">From <code>sacct --allusers -s RUNNING</code> &mdash; the SLURM
+<div class="note">The jawahar account only. From
+<code>sacct -A jawahar --allusers -s RUNNING</code> &mdash; the SLURM
 accounting database, which reports every account's running jobs with their
 allocated GPU count and node. <code>squeue</code> and <code>scontrol</code> are
 restricted here by <code>PrivateData</code>, but sacct is not.
